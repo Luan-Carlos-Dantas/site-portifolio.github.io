@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/02ff3416ee.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Olá, sou o Luan</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand h1" href="#">
+                    <i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-laptop-code"></i><i
+                        class="fa-solid fa-chevron-right"></i> LC<span>_</span>
+                </a>
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=""><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-me">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilities">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link">Projetos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="principal area d-flex justify-content-center align-items-center flex-column">
+            <h1>Olá, eu sou o <span>Luan</span></h1>
+            <h2>Desenvolvedor Full Stack</h2>
+            <article class="buttons">
+                <button id="myButton" value="https://www.linkedin.com/in/luan-carlos-696bb114b/">
+                    <i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;Linked In
+                </button>
+                <button id="myButton" value="https://github.com/Luan-Carlos-Dantas" class="myButton btn-outline">
+                    <i class="fa-brands fa-github"></i>&nbsp;&nbsp;Github
+                </button>
+                <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+        </section>
+        <section class="about-me container d-flex" id="about-me">
+            <div class="row">
+                <div data-aos="fade-right" class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="box-image d-flex justify-content-center align-items-center">
+                        <img class="img-fluid img-thumbnail" src="assets/img/avatar.svg"
+                            alt="Foto do Perfil do Linked In">
+                    </div>
+                </div>
+                <div data-aos="fade-left" class="about-me-text col-md-6 d-flex justify-content-center flex-column">
+                    <h2 data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">
+                        Sobre Mim
+                    </h2>
+                    <article>
+                        <p>
+                            Comecei como auxiliar em um escritório de advocacia, mas sempre me interessei
+                            sobre a área de programação, desde 2014. Venho estudando sobre Programação, assim fazendo
+                            alguns poucos projetos, mas nunca desistindo assim em 2018 me formei em Análise e
+                            Desenvolvimento
+                            de Sistemas, meu primeiro projeto profissional foi um site para o escritório de advocacia
+                            que eu trabalhava em 2019. Atualmente estou trabalhando como Auxiliar de Cartório, mas ainda
+                            não
+                            desisti que de continuar a tentar realizar meu sonho de trabalhar com programação.
+                        </p>
+                        <p>
+                            <button id="myButton" class="btn-outline" value="epa">
+                                <i class="fa-solid fa-file-arrow-down"></i>&nbsp;&nbsp;Currículo
+                            </button>
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="habilities" class="bg-dark py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 habilities text-white">
+                        <h2 data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom" >Habilidades</h2>
+                        <div class="d-flex justify-content-center flex-column mt-5">
+                            <article data-aos="fade-right" class="my-2">
+                                <div class="d-flex">
+                                    <h2>
+                                        <i class="fa-brands fa-html5"></i>
+                                    </h2>
+                                    <h3 class="d-flex justify-content-center align-items-center">HTML 5</h3>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated html"
+                                        role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:80%;"></div>
+                                </div>
+                            </article>
+                            <article data-aos="fade-right" class="my-2">
+                                <div class="d-flex">
+                                    <h2>
+                                        <i class="fa-brands fa-css3-alt"></i>
+                                    </h2>
+                                    <h3 class="d-flex justify-content-center align-items-center">CSS 3</h3>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:70%;"></div>
+                                </div>
+                            </article>
+                            <article data-aos="fade-right" class="my-2">
+                                <div class="d-flex">
+                                    <h2>
+                                        <i class="fa-brands fa-js-square"></i>
+                                    </h2>
+                                    <h3 class="d-flex justify-content-center align-items-center">JavaScript</h3>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:60%;"></div>
+                                </div>
+                            </article>
+                            <article data-aos="fade-right" class="my-2">
+                                <div class="d-flex">
+                                    <h2>
+                                        <i class="fa-brands fa-node-js"></i>
+                                    </h2>
+                                    <h3 class="d-flex justify-content-center align-items-center">NodeJS</h3>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:40%;"></div>
+                                </div>
+                            </article>
+                            <article data-aos="fade-right" class="my-2">
+                                <div class="d-flex">
+                                    <h2>
+                                        <i class="fa-brands fa-bootstrap"></i>
+                                        <h3 class="d-flex justify-content-center align-items-center">Bootstrap</h3>
+                                    </h2>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:70%;"></div>
+                                </div>
+                            </article>
+                            <article data-aos="fade-right" class="my-2">
+                                <div class="d-flex">
+                                    <h2>
+                                        <i class="fa-brands fa-react"></i>
+                                    </h2>
+                                    <h3 class="d-flex justify-content-center align-items-center">React</h3>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:30%;"></div>
+                                </div>
+                            </article>
+                            <article data-aos="fade-right" class="my-2">
+                                <div class="d-flex">
+                                    <h2>
+                                        <i class="fa-brands fa-python"></i>
+                                        <h3 class="d-flex justify-content-center align-items-center">Python</h3>
+                                    </h2>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                        role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+                                        aria-valuemin="0" aria-valuemax="100" style="width:30%;"></div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-md-6 experiences d-flex justify-content-center align-items-center flex-column">
+                        <h2 data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom" class="text-white">Experiências</h2>
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div data-aos="fade-up" class="col-6">
+                                <div class="card text-center">
+                                    <div class="card-header-personal">
+                                        <h3 class="card-title"><i class="fa-solid fa-briefcase"></i></h3>
+                                        <h4>2º Oficial Registro de Imóveis de Guarulhos</h4>
+                                    </div>
+                                    <div class="card-body py-5">
+                                        <p>Atuo como Auxiliar de Cartório, atualmente com maior foco na parte de títulos
+                                            eltrônicos.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p>
+                                            23/05/2021 - Atualmente
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" class="col-6">
+                                <div class="card text-center">
+                                    <div class="card-header-personal">
+                                        <h3 class="card-title"><i class="fa-solid fa-briefcase"></i></h3>
+                                        <h4>Araújo Advocacia</h4>
+                                    </div>
+                                    <div class="card-body py-5">
+                                        <p class="card-text">Desepenhava funções administrativas como auxiliar, depois
+                                            acabei produzindo um site para o escrtório.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p>
+                                            01/06/2021 - 01/03/2022
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" class="col-6">
+                                <div class="card text-center">
+                                    <div class="card-header-personal">
+                                        <h3 class="card-title"><i class="fa-solid fa-briefcase"></i></h3>
+                                        <h4>Araújo Advocacia</h4>
+                                    </div>
+                                    <div class="card-body py-5">
+                                        <p class="card-text">Desepenhava funções administrativas como auxiliar, depois
+                                            acabei produzindo um site para o escrtório.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p>
+                                            13/09/2017 - 10/10/2018
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" class="col-6">
+                                <div class="card text-center">
+                                    <div class="card-header-personal">
+                                        <h3 class="card-title"><i class="fa-solid fa-briefcase"></i></h3>
+                                        <h4>Aguardando</h4>
+                                    </div>
+                                    <div class="card-body py-5">
+                                        <p class="card-text">Esperando uma nova oportunidade de desenvolvimento.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <p>
+                                            ../../.. - ../../..
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects py-5 mb-5w">
+            <div class="col-md-12 d-flex align-items-center justify-content-center flex-column">
+                <h2 data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" >Projetos</h2>
+                <article class="container row">
+                    <div data-aos="fade-up" class="col-md-4 d-flex justify-content-center align-items-center flex-column">
+                        <div class="card-project">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="assets/img/projects/logo_bgnone.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <div>
+                                        <p>
+                                            <button value="https://advaraujoesilva.com.br/" id="myButton" class="btn btn-outline">Acesar agora</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-md-4 d-flex justify-content-center align-items-center flex-column">
+                        <div class="card-project">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="assets/img/projects/nlw_logo.png" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <div>
+                                        <p>
+                                            <button href="" id="myButton" class="btn btn-outline">Acesar agora</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-md-4 d-flex justify-content-center align-items-center flex-column">
+                        <div class="card-project">
+                            <div class="face face1">
+                                <div class="content">
+                                    <img src="assets/img/projects/spotify_logo.svg" alt="" srcset="">
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <div>
+                                        <p>
+                                            <button href="" id="myButton" class="btn btn-outline">Acesar agora</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-md-4 d-flex justify-content-center align-items-center flex-column">
+                        <div class="card-project">
+                            <div class="face face1">
+                                <div class="content">
+                                    <h3>
+                                        Em breve...
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <div>
+                                        <p>
+                                            <button href="" id="myButton" class="btn btn-outline">Acesar agora</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-md-4 d-flex justify-content-center align-items-center flex-column">
+                        <div class="card-project">
+                            <div class="face face1">
+                                <div class="content">
+                                    <h3>
+                                        Em breve...
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <div>
+                                        <p>
+                                            <button href="" id="myButton" class="btn btn-outline">Acesar agora</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-md-4 d-flex justify-content-center align-items-center flex-column">
+                        <div class="card-project">
+                            <div class="face face1">
+                                <div class="content">
+                                    <h3>
+                                        Em breve...
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="face face2">
+                                <div class="content">
+                                    <div>
+                                        <p>
+                                            <button href="" id="myButton" class="btn btn-outline">Acesar agora</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark">
+        <section class="container">
+            <article class="row">
+                <article data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" class="message-footer col-12 bg-light d-flex justify-content-center flex-row p-5">
+                    <div class="message-one">
+                        <h3>Vamos trabalhar juntos ?</h3>
+                    </div>
+                    <div class="message-two">
+                        <h3>Está interessado em iniciar um novo projeto ? Vamos conversar vai ser um prazer ouvir novas
+                            ideias.</h3>
+                    </div>
+                    <div>
+                        <button id="myButton" value="https://advaraujoesilva.com.br/"><i class="fa-solid fa-circle-check"></i>Let´s go !</button>
+                    </div>
+                </article>
+                <div class="col-12 d-flex justify-content-center align-items-center flex-column text-light container">
+                    <h2><i class="fa-solid fa-laptop-code"></i></h2>
+                    <div class="my-3">
+                        <p>
+                            Vivendo, aprendendo e tentando ser melhor sempre !
+                        </p>
+                    </div>
+                    <div class="icons-link d-flex justify-content-center align-itmes-center flex-row gap-5 my-4">
+                        <p>
+                            <a href="">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.linkedin.com/in/luan-carlos-696bb114b/">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://github.com/Luan-Carlos-Dantas">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="">
+                                <i class="fa-solid fa-file-lines"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div>
+                        <h4>
+                            Criado com <i class="fa-brands fa-bootstrap"></i>
+                        </h4>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </footer>
+</body>
+<script src="assets/js/links.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</html>

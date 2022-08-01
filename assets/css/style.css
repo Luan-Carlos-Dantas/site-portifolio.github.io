@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --primary-color: #4e54c8;
+    --secondary-color: #8f94fb;
+    --title-font-family:'Inter', sans-serif !important;
+    --subtitle-font-family:'Poppins', sans-serif !important;
+    --title-font-size: 12.8rem ;
+    --subtitle-font-size:  4.4rem;
+    --text-size: 2.0rem;
+}
+
+
+/*Styles geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    width: 100%;
+}
+
+h1, h2{
+    line-height: 100%;
+}
+
+h1{
+    font-family: var(--title-font-family);
+    font-weight: 700;
+    font-size: var(--title-font-size);
+}
+
+h2{
+    font-family: var(--subtitle-font-family);
+    font-weight: 600;
+    font-size: var(--subtitle-font-size);
+}
+
+p{
+    font-family: var(--subtitle-font-family);
+    font-size: var(--text-size);
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+    h1{
+        font-size: 8rem;
+    }
+    h2{
+        font-size: 2.8rem;
+        margin: 0 5px;
+    }
+    p{
+    font-size: 1.6rem;
+    }
+
+    .principal .buttons button{
+    padding: 8px 20px !important;
+    font-size: 1.5rem !important;
+    }
+
+    .principal h1{
+        letter-spacing: -0.8rem !important;
+    }
+
+    .about-me .box-image img{
+        width: 50% !important;
+        height: 50% !important;
+    }
+
+    .about-me-text article{
+        margin-top: 10px !important;
+        font-weight: 400px;
+        line-height: 220% !important;
+        margin-bottom: 10px !important;
+    }
+    .about-me button.btn-outline{
+        padding: 8px 20px !important;
+        font-size: 1.4rem !important;
+    }
+    
+    .experiences .card{
+        width: 160px !important;
+        height: 400px !important;
+        box-sizing: border-box !important;
+    }
+    
+    .experiences .card .card-body p{
+        font-size: 1.4rem !important;
+        box-sizing: border-box;
+    }
+    .experiences .card .card-header-personal h4{
+        font-weight: 700;
+        font-size: 1.8rem !important;
+    }
+    
+    .message-footer .message-one h3{
+        font-size: 1.5rem !important;
+        font-family:'Oswald', sans-serif;;
+        font-weight: 700;
+    }
+    
+    .message-footer .message-two h3{
+        line-height: 100%;
+        font-size: 1.5rem !important;
+        display: none !important;
+    }
+    
+    .message-footer button i{
+        font-size: 1.4rem !important;
+    }
+    
+    .message-footer button{
+        width: max-content !important;
+        padding: 8px 10px !important;
+        font-size: 1.4rem !important;
+        font-weight: 700;
+        gap: 20px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { ... } */
+
+/*Styles geral*/
+
+/* Style Navbar */
+nav.navbar{
+    font-size: 1.8rem;
+    background: #000 !important;  
+    z-index: 1;
+}
+ul li a{
+    font-size: 2rem;
+    font-family: var(--subtitle-font-family);
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    margin: 0 10px !important;
+    color:#fff !important;
+    position: relative;
+    width: auto;
+}
+
+ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+nav.navbar ul li a:hover::after{
+    width: 100%;
+}
+
+
+nav.navbar a.navbar-brand{
+    font-size:2.6rem;
+    font-weight: 700;
+    color:#fff !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes cursorInput {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+nav.navbar a.navbar-brand:hover span{
+    animation: cursorInput 0.9S linear infinite;
+}
+/* Style Navbar */
+
+/*Style principal*/
+.area{
+    background: #000;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+@keyframes colorCycle {
+    0%,
+    55%{
+        filter: brightness(0) invert(1);
+    }
+
+    11%,
+    33%{
+        filter: none;
+    }
+}
+.principal h1{
+    letter-spacing: -1.24rem;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.principal h1 span{
+    padding: 0 0.67rem;
+    background-image: linear-gradient(to left, var(--secondary-color), var(--primary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorCycle 10s ease-in-out infinite; 
+    
+}
+
+.principal h2{
+    line-height: 100%;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.principal .buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.principal .buttons button{
+    padding: 10px 40px;
+    font-size: 1.8rem;
+    background-color: var(--primary-color);
+    font-weight: 600;
+    border: 1px solidvar(--primary-color);
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    margin: 80px 15px;
+    font-family:var(--title-font-family);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.principal .buttons button:hover{
+    background-color: var(--secondary-color);
+    color:#000;
+    transition: .4s ease-in;
+}
+.principal .buttons button.btn-outline{
+    padding: 10px 40px;
+    font-size: 1.8rem;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 80px 15px;
+    font-family:var(--title-font-family);
+    z-index: 1;
+    cursor:pointer;
+}
+
+.principal .buttons button.btn-outline:hover{
+    background-color: #fff;
+    color: #000;
+    transition: .4s ease-in;
+}
+/*Style principal*/
+
+/* Style About me */
+
+@keyframes bubbleImg {
+    0%,
+    55%,
+    100%{
+        border-radius: 64% 36% 46% 54% / 55% 26% 74% 45%;
+    }
+
+    11%,
+    33%,
+    77%{
+        border-radius: 70% 30% 60% 40% / 42% 68% 32% 58% ;
+    }
+}
+.about-me{
+    height: 100vh;
+}
+.about-me .box-image{
+    border-radius: 70% 30% 60% 40% / 42% 68% 32% 58% ;
+    background-color:var(--primary-color);
+    animation: bubbleImg 10s infinite;
+}
+
+.about-me .box-image img{
+    border-radius: 44% 56% 50% 50% / 64% 50% 50% 36% ;
+    width: 70%;
+    height: 70%;
+}
+
+.about-me .box-image img:hover{
+    border: 1px solid var(--secondary-color);
+}
+
+.about-me-text article{
+    margin-top: 20px;
+    font-weight: 400px;
+    text-align:start;
+    line-height: 300%;
+    margin-bottom: 10px !important;
+}
+.about-me button.btn-outline{
+    font-family: var(--subtitle-font-family);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    font-size: 1.8rem;
+    border: 1px solid  #000;
+    color: #000;
+    background-color: transparent;
+    border-radius: 4px;
+    display: inline-block;
+    font-family:var(--title-font-family);
+    z-index: 1;
+    cursor:pointer;
+}
+
+.about-me button.btn-outline:hover{
+    background-color: #000;
+    color: #fff;
+    transition: .3s ease-in;
+}
+
+/* Style About me */
+
+/* Style Habilties */
+.habilities article h3,
+.habilities article h2{
+    display: inline-block;
+}
+
+.habilities h3{
+    font-family: var(--subtitle-font-family);
+    font-size: 3.2rem;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.habilities article:nth-child(1):hover i{
+    color: #f14a29;
+}
+.habilities article:nth-child(2):hover i{
+    color: #2965f1;
+}
+.habilities article:nth-child(3):hover i{
+    color: #F0DB4F;
+}
+.habilities article:nth-child(4):hover i{
+    color: #3C873A;
+}
+.habilities article:nth-child(5):hover i{
+    color: #7654aa;
+}
+.habilities article:nth-child(6):hover i{
+    color: #61DBFB;
+}
+.habilities article:nth-child(7):hover i{
+    color: #4B8BBE;
+}
+
+.progress{
+    height: 20px;
+    background: #000;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 40px;
+    overflow: visible;
+    position: relative;
+}
+.progress .progress-bar{
+    background: #fff;
+    border-radius: 0;
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+}
+.progress .progress-bar:before{
+    content: "";
+    width: 100%;
+    border-top: 20px double #fff;
+    border-right: 25px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress .progress-value{
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    position: absolute;
+    top: -32px;
+    right: -5px;
+}
+
+.habilities article:nth-child(1):hover .progress .progress-bar:before{
+    border-top: 20px double #f14a29;
+}
+
+.habilities article:nth-child(2):hover .progress .progress-bar:before{
+    border-top: 20px double #2965f1;
+}
+
+.habilities article:nth-child(3):hover .progress .progress-bar:before{
+    border-top: 20px double #F0DB4F;
+}
+
+.habilities article:nth-child(4):hover .progress .progress-bar:before{
+    border-top: 20px double #3C873A;
+}
+
+.habilities article:nth-child(5):hover .progress .progress-bar:before{
+    border-top: 20px double #7654aa;
+}
+
+.habilities article:nth-child(6):hover .progress .progress-bar:before{
+    border-top: 20px double #61DBFB;
+}
+
+.habilities article:nth-child(7):hover .progress .progress-bar:before{
+    border-top: 20px double #4B8BBE;
+}
+
+@-webkit-keyframes animate-positive{
+    0% { width: 0; }
+}
+@keyframes animate-positive{
+    0% { width: 0; }
+}
+/* Style Habilties */
+
+/* Style Experience */
+.experiences .card{
+    width: 250px;
+    height: 420px;
+    margin-top: 50px;
+}
+
+.experiences .card .card-header-personal h3{
+    padding: 15px;
+    margin-top: -50px;
+    color: #fff;
+    font-size: 3.0rem;
+    display: inline-block;
+    border-radius: 50%;
+    background-color:var(--primary-color);
+    border: 4px double #fff;
+}
+
+.experiences .card .card-header-personal h4{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.experiences .card .card-footer p{
+    font-size: 1.6rem;
+    padding-top: 10px;
+}
+
+/* Style Experience */
+
+/* Style Projects */
+
+.card-project{
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.card-project .face{
+    width: 350px;
+    transition: .5s;
+}
+
+.card-project .face.face1{
+    position: relative;
+    height: 300px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    border-radius: 8px;
+}
+
+.card-project:hover .face.face1{
+    background: #030303;
+    transform: translateY(0);
+}
+
+.card-project .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.card-project:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.card-project .face.face1 .content img{
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.card-project .face.face1 .content h3{
+    margin: 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+.card-project .face.face2 {
+    position: relative;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px 1px 1px 0 solid #000;
+    box-sizing: border-box;
+    transform: translateY(-50px);
+}
+
+.card-project:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.card-project .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    text-overflow: ellipsis;
+}
+
+.card-project .face.face2 .content a{
+    margin: 0;
+    padding: 0;
+}
+
+.card-project .face.face2 button.btn-outline{
+    padding: 10px 40px;
+    font-size: 1.8rem;
+    border: 1px solid var(--primary-color);
+    color:var(--primary-color);
+    background-color: transparent;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 80px 15px;
+    font-family:var(--title-font-family);
+    z-index: 1;
+    cursor:pointer;
+}
+
+.card-project .face.face2 button.btn-outline:hover{
+    color: #fff;
+    background: var(--primary-color);
+    transition: 0.4s ease-in;
+}
+
+.card-project .face.face2 button.btn-outline:focus{
+    box-shadow: 0 0 0 3px #000;
+    background: #363535;
+}
+
+/* Style Projects */
+
+/* Footer Style */
+.message-footer{
+    margin-top: 5rem;
+    border: 8px solid #212529;
+    border-radius: 10px;
+    position: relative;
+    top: -100px;
+}
+
+.message-footer div{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.message-footer .message-one h3{
+    font-size: 3rem;
+    font-family:'Oswald', sans-serif;;
+    font-weight: 700;
+}
+
+.message-footer div h3{
+    line-height: 100%;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.message-footer button i{
+    font-size: 3rem;
+}
+
+.message-footer button{
+    width: 25rem;
+    padding: 15px 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 5px solid linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(5,5,5,1) 30%, rgba(33,37,41,1) 74%);
+    color: #000;
+    background-color: transparent;
+    border-radius: 40px;
+    display: inline-block;
+    font-family:'Oswald', sans-serif;;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.message-footer button:hover{
+    color: #fff;
+    background:  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(5,5,5,1) 30%, rgba(33,37,41,1) 74%);
+    transition: 0.5s ease-in;
+}
+
+.icons-link p a{
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: #fff;
+    /* border: 2px double #fff; */
+    padding: 5px 12px;
+    border-radius: 50%;
+    margin: 20px 0;
+    transition: .3s ease-in-out;
+}   
+
+.icons-link p a:hover{
+    color:#000;
+    background-color: var(--secondary-color);
+}
+/* Footer Style */
